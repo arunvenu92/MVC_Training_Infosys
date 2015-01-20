@@ -129,6 +129,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201501200536351_adTable_employees.cs" />
+    <Compile Include="Migrations\201501200536351_adTable_employees.Designer.cs">
+      <DependentUpon>201501200536351_adTable_employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201501200551592_addTables_Employees_Skills.cs" />
+    <Compile Include="Migrations\201501200551592_addTables_Employees_Skills.Designer.cs">
+      <DependentUpon>201501200551592_addTables_Employees_Skills.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AcademyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -224,6 +232,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201501200536351_adTable_employees.resx">
+      <DependentUpon>201501200536351_adTable_employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201501200551592_addTables_Employees_Skills.resx">
+      <DependentUpon>201501200551592_addTables_Employees_Skills.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
