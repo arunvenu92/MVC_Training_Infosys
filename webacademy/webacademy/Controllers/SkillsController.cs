@@ -15,6 +15,10 @@ namespace webacademy.Controllers
             {
                 ExtraMessage ="We are inside the Skills controller and Index action"
             };
+            using (AcademyContext context = new AcademyContext())
+            {
+                vm.Skills = context.Skills.Select(x => x).ToArray();
+            }
             return View("Index", vm);
         }
 

@@ -15,6 +15,19 @@
     <div>
         <h1>Hi there</h1>
         <h2>@Model.ExtraMessage</h2>
+        <table>
+            <tr>
+                <th>Id of the skill</th>
+                <th>Alias of the skill</th>
+            </tr> @for (int i = 0; i < @Model.Skills.Length; i++)
+            {
+                <tr>
+                    <td>@Model.Skills[i].Id</td>
+                    <td>@Model.Skills[i].Title</td>
+                </tr>
+            }
+           
+        </table>
     </div>
 </body>
 </html>

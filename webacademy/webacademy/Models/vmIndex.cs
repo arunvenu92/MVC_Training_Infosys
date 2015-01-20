@@ -8,5 +8,6 @@ namespace webacademy.Models
     public class vmIndex
     {
         public string ExtraMessage { get; set; }
+        public Skill[] Skills { get; set; }
     }
 }
